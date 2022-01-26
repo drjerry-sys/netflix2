@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Watch />
+      <Register />
       <Routes>
         <Route path="/" app={Home} />
         <Route path="/login" app={Login} />
