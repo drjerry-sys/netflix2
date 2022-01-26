@@ -1,6 +1,5 @@
 import React from 'react';
 import './Watch.scss';
-import reckless from '../../../assets/videos/reckless_love.mp4';
 import { ArrowBackOutlined } from '@material-ui/icons';
 
 const Watch = () => {
@@ -10,7 +9,7 @@ const Watch = () => {
                 <ArrowBackOutlined  className="icon"/>
                 <span>Home</span>
             </div>
-            <video src={reckless} className="video" autoPlay progress controls />
+            <video src={'https://youtu.be/deG25y_r6OY'} className="video" autoPlay progress controls />
         </div>
      );
 }
