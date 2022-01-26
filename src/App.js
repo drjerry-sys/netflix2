@@ -7,10 +7,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/"><Home /></Route>
-        <Route path="/login"><Login /></Route>
-        <Route path="/watch"><Watch /></Route>
-        <Route path="/register"><Register /></Route>
+        <Route path="/" app={Home}>
+        <Route path="/login" app={Login}>
+        <Route path="/watch" app={Watch}>
+        <Route path="/register" app={Register}>
       </Routes>
     </div>
   );
