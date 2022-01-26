@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './ListItem.scss';
 import { PlayArrow, ThumbUpAltOutlined, Add, ThumbDownOutlined } from '@material-ui/icons';
 import imgItem from '../../assets/images/bulb_as_dummy_logo.png';
-import reckless from '../../assets/videos/reckless_love.mp4';
 
 const ListItem = ({ index }) => {
     const [ isHovered, setIsHovered ] = useState(false);
@@ -11,7 +10,7 @@ const ListItem = ({ index }) => {
             <img src={imgItem} alt="thumnail" />
             {isHovered && (
                 <>
-                    <video src={reckless} autoPlay={true} muted loop ></video>
+                    <video src={"https://youtu.be/deG25y_r6OY"} autoPlay={true} muted loop ></video>
                     <div className="itemInfo">
                         <div className="icons">
                             <PlayArrow className="icon" />
